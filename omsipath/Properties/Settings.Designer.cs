@@ -22,5 +22,41 @@ namespace Omsipath.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string targetDirectory {
+            get {
+                return ((string)(this["targetDirectory"]));
+            }
+            set {
+                this["targetDirectory"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("800, 500")]
+        public global::System.Drawing.Size windowSize {
+            get {
+                return ((global::System.Drawing.Size)(this["windowSize"]));
+            }
+            set {
+                this["windowSize"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public byte overwriteSetting {
+            get {
+                return ((byte)(this["overwriteSetting"]));
+            }
+            set {
+                this["overwriteSetting"] = value;
+            }
+        }
     }
 }

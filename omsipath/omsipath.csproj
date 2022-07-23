@@ -12,6 +12,7 @@
     <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
     <Version>1.1</Version>
     <Authors>l-uuz</Authors>
+    <ApplicationIcon>Bus.ico</ApplicationIcon>
     <Copyright>(c) 2022 l-uuz. All rights reserved.</Copyright>
     <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
@@ -27,6 +28,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="Bus.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\i18n.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>i18n.resx</DependentUpon>
+    </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -40,6 +50,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Properties\i18n.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>i18n.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

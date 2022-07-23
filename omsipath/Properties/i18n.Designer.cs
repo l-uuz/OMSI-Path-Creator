@@ -22,14 +22,14 @@ namespace Omsipath.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    internal class i18n {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        internal i18n() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Omsipath.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Omsipath.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Omsipath.Properties.i18n", typeof(i18n).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,62 +61,65 @@ namespace Omsipath.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Omsipath Creator ähnelt.
         /// </summary>
-        internal static System.Drawing.Bitmap Check {
+        internal static string application_name {
             get {
-                object obj = ResourceManager.GetObject("Check", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("application.name", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        ///   Sucht eine lokalisierte Zeichenfolge, die An error occurred while copying the files! ähnelt.
         /// </summary>
-        internal static System.Drawing.Bitmap Folder {
+        internal static string msg_copyError {
             get {
-                object obj = ResourceManager.GetObject("Folder", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("msg.copyError", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Error ähnelt.
         /// </summary>
-        internal static System.Drawing.Bitmap Minus {
+        internal static string msg_error {
             get {
-                object obj = ResourceManager.GetObject("Minus", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("msg.error", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        ///   Sucht eine lokalisierte Zeichenfolge, die The project name must not be &quot;OMSI 2&quot;! ähnelt.
         /// </summary>
-        internal static System.Drawing.Bitmap Moon {
+        internal static string msg_invalidProjectName {
             get {
-                object obj = ResourceManager.GetObject("Moon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("msg.invalidProjectName", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        ///   Sucht eine lokalisierte Zeichenfolge, die The target directory is invalid or does not exist! ähnelt.
         /// </summary>
-        internal static System.Drawing.Bitmap Sun {
+        internal static string msg_invalidTarget {
             get {
-                object obj = ResourceManager.GetObject("Sun", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("msg.invalidTarget", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        ///   Sucht eine lokalisierte Zeichenfolge, die There are no file entries to copy! ähnelt.
         /// </summary>
-        internal static System.Drawing.Bitmap Times {
+        internal static string msg_noFiles {
             get {
-                object obj = ResourceManager.GetObject("Times", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("msg.noFiles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die The target directory &quot;{0}&quot; already exists. ähnelt.
+        /// </summary>
+        internal static string msg_overwriteDialogMessage {
+            get {
+                return ResourceManager.GetString("msg.overwriteDialogMessage", resourceCulture);
             }
         }
     }
