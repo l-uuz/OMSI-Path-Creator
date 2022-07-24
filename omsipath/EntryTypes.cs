@@ -9,7 +9,7 @@ namespace Omsipath
     /// </summary>
     internal abstract class Entry
     {
-        protected string AbsolutePath { get; }
+        public string AbsolutePath { get; }
 
         protected Entry(string absolutePath)
         {

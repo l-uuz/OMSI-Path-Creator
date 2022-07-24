@@ -91,18 +91,8 @@ namespace Omsipath.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die                   (c) 2020-2022 l-uuz ALL RIGHTS RESERVED.
-        ///
-        ///--------------------------------------------------------------------------------
-        ///                             The MIT License (MIT)
-        ///    applies to:
-        ///	- .NET, Copyright (c) .NET Foundation and Contributors
-        ///    - YamlDotNet, Copyright (c) 2006 Kirill Simonov
-        ///	                            2008-2014 Antoine Aubry and contributors
-        ///
-        ///--------------------------------------------------------------------------------
-        ///
-        ///Permission is hereby granted, [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die                   (c) 2020-2022 l-uuz. ALL RIGHTS RESERVED.
+        /// ähnelt.
         /// </summary>
         internal static string LICENSE {
             get {

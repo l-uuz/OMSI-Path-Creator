@@ -2613,7 +2613,7 @@
     <value>Zielverzeichnis auswählen, in das die Dateien kopiert werden.</value>
   </data>
   <data name="subLabel.Text" xml:space="preserve">
-    <value>Projektname</value>
+    <value>Unterordner</value>
   </data>
   <data name="editSession.Text" xml:space="preserve">
     <value>Sitzungen</value>

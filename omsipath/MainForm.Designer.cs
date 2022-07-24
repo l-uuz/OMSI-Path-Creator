@@ -153,6 +153,7 @@
             resources.ApplyResources(this.editSession, "editSession");
             this.editSession.Image = global::Omsipath.Properties.Resources.Settings;
             this.editSession.Name = "editSession";
+            this.editSession.Click += new System.EventHandler(this.editSession_Click);
             // 
             // bottomLayout
             // 

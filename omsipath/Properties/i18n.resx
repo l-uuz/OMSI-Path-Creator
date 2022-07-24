@@ -118,4 +118,10 @@
   <data name="msg.overwriteDialogMessage" xml:space="preserve">
     <value>The target directory "{0}" already exists.</value>
   </data>
+  <data name="msg.emptySessionKey" xml:space="preserve">
+    <value>(No name)</value>
+  </data>
+  <data name="msg.noSubDirectory" xml:space="preserve">
+    <value>This works only if a subfolder has been entered in the main window.</value>
+  </data>
 </root>

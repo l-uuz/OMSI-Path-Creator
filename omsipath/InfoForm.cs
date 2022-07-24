@@ -2,7 +2,7 @@
 
 namespace Omsipath
 {
-    public partial class InfoForm : Form
+    internal partial class InfoForm : Form
     {
         public InfoForm()
         {

@@ -79,6 +79,15 @@ namespace Omsipath.Properties {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die (No name) ähnelt.
+        /// </summary>
+        internal static string msg_emptySessionKey {
+            get {
+                return ResourceManager.GetString("msg.emptySessionKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Error ähnelt.
         /// </summary>
         internal static string msg_error {
@@ -111,6 +120,15 @@ namespace Omsipath.Properties {
         internal static string msg_noFiles {
             get {
                 return ResourceManager.GetString("msg.noFiles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die This works only if a subfolder has been entered in the main window. ähnelt.
+        /// </summary>
+        internal static string msg_noSubDirectory {
+            get {
+                return ResourceManager.GetString("msg.noSubDirectory", resourceCulture);
             }
         }
         

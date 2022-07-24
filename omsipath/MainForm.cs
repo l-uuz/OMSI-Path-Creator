@@ -1,6 +1,5 @@
 ﻿using Omsipath.Properties;
 using System.ComponentModel;
-using System.Reflection;
 
 namespace Omsipath
 {
@@ -150,7 +149,16 @@ namespace Omsipath
             // Prepare the UI
             UpdateUiForBackgroundTask(false);
 
-            CopyTask task = PrepareTask(targetDirectory, overwriteInstruction.Value);
+            CopyTask? task;
+            try
+            {
+                task = PrepareTask(targetDirectory, overwriteInstruction.Value);
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message, i18n.msg_error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             // Cancel if no file is to copy
             if (task.HasNoFiles())
@@ -217,7 +225,8 @@ namespace Omsipath
             {
                 foreach (var sourceFile in entry.ToAbsoluteFiles())
                 {
-                    string targetFile = string.Concat(task.Target, @"\", sourceFile.AsSpan(sourceFile.LastIndexOf("OMSI 2", StringComparison.Ordinal)));
+                    // TODO Better Exception handling if file was deleted mheanwile - see also FileToCopy constructor
+                    var targetFile = string.Concat(task.Target, @"\", sourceFile.AsSpan(sourceFile.LastIndexOf("OMSI 2", StringComparison.Ordinal)));
                     task.FilesToCopy.Add(new FileToCopy(sourceFile, targetFile));
                 }
             }
@@ -324,6 +333,40 @@ namespace Omsipath
         private void infoButton_Click(object sender, EventArgs e)
         {
             new InfoForm().ShowDialog();
+        }
+        
+        /// <summary>
+        /// Shows the session dialog
+        /// </summary>
+        private void editSession_Click(object sender, EventArgs e)
+        {
+            // Dialog can only be shown if target directory is not empty
+            // Otherwise the session files could not be loaded
+            if (string.IsNullOrWhiteSpace(Settings.Default.targetDirectory) ||
+                !Directory.Exists(Settings.Default.targetDirectory))
+            {
+                MessageBox.Show(i18n.msg_invalidTarget, i18n.msg_error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            var currentSession = new Session
+            {
+                ProjectName = string.Join("_", subCombobox.Text.Split(Path.GetInvalidPathChars()))
+            };
+            currentSession.Entries.AddRange(fileList.Items.OfType<Entry>());
+
+            var sessionForm = new SessionForm(currentSession);
+            if (sessionForm.ShowDialog() == DialogResult.OK && sessionForm.SessionToLoad != null)
+            {
+                // If a new session was loaded in the dialog, the UI is updated
+                subCombobox.Text = sessionForm.SessionToLoad.ProjectName;
+                fileList.Items.Clear();
+                foreach (var entry in sessionForm.SessionToLoad.Entries)
+                {
+                    if (!fileList.Items.Contains(entry)) fileList.Items.Add(entry);
+                }
+                
+            }
         }
     }
 }

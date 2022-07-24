@@ -84,21 +84,18 @@
             // 
             resources.ApplyResources(this.sourceCodeButton, "sourceCodeButton");
             this.sourceCodeButton.Name = "sourceCodeButton";
-            this.sourceCodeButton.UseVisualStyleBackColor = true;
             this.sourceCodeButton.Click += new System.EventHandler(this.sourceCodeButton_Click);
             // 
             // supportButton
             // 
             resources.ApplyResources(this.supportButton, "supportButton");
             this.supportButton.Name = "supportButton";
-            this.supportButton.UseVisualStyleBackColor = true;
             this.supportButton.Click += new System.EventHandler(this.supportButton_Click);
             // 
             // updateButton
             // 
             resources.ApplyResources(this.updateButton, "updateButton");
             this.updateButton.Name = "updateButton";
-            this.updateButton.UseVisualStyleBackColor = true;
             this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
             // OKButton
@@ -106,7 +103,6 @@
             resources.ApplyResources(this.OKButton, "OKButton");
             this.OKButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.OKButton.Name = "OKButton";
-            this.OKButton.UseVisualStyleBackColor = true;
             this.OKButton.Click += new System.EventHandler(this.OKButton_Click);
             // 
             // InfoForm
@@ -117,7 +113,11 @@
             this.CancelButton = this.OKButton;
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "InfoForm";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Load += new System.EventHandler(this.InfoForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

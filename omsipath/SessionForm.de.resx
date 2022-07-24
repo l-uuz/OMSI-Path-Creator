@@ -117,31 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="msg.noFiles" xml:space="preserve">
-    <value>Es gibt keine Dateien zu kopieren!</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Sitzungen</value>
   </data>
-  <data name="application.name" xml:space="preserve">
-    <value>Omsipfad-Ersteller</value>
+  <data name="deleteSessionButton.Text" xml:space="preserve">
+    <value>Löschen</value>
   </data>
-  <data name="msg.copyError" xml:space="preserve">
-    <value>Ein Fehler ist beim Kopieren aufgetreten!</value>
+  <data name="loadSessionButton.Text" xml:space="preserve">
+    <value>Sitzung laden</value>
   </data>
-  <data name="msg.error" xml:space="preserve">
-    <value>Fehler</value>
+  <data name="saveCurrentSessionButton.Text" xml:space="preserve">
+    <value>Aktuelle Sitzung speichern</value>
   </data>
-  <data name="msg.invalidProjectName" xml:space="preserve">
-    <value>Der Projektname darf nicht "OMSI 2" heißen!</value>
+  <data name="deleteSessionButton.ToolTip" xml:space="preserve">
+    <value>Löscht die markierte Sitzung.</value>
   </data>
-  <data name="msg.invalidTarget" xml:space="preserve">
-    <value>Das Ziel-Verzeichnis ist ungültig oder existiert nicht!</value>
+  <data name="loadSessionButton.ToolTip" xml:space="preserve">
+    <value>Verwirft alle aktuellen Änderungen und lädt die markierte Sitzung.</value>
   </data>
-  <data name="msg.overwriteDialogMessage" xml:space="preserve">
-    <value>Der Zielordner "{0}" existiert bereits.</value>
+  <data name="saveCurrentSessionButton.ToolTip" xml:space="preserve">
+    <value>Speichert die Sitzung unter dem Namen des aktuell gewählten Unterordners.</value>
   </data>
-  <data name="msg.emptySessionKey" xml:space="preserve">
-    <value>(Kein Name)</value>
-  </data>
-  <data name="msg.noSubDirectory" xml:space="preserve">
-    <value>Diese Funktion funktioniert nur, wenn im Hauptfenster ein Unterordner spezifiziert wurde.</value>
+  <data name="sessionList.ToolTip" xml:space="preserve">
+    <value>All saved sessions</value>
   </data>
 </root>
