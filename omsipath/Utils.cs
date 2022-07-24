@@ -13,7 +13,7 @@ namespace Omsipath
         /// </summary>
         public static string GetVersion()
         {
-            return FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).ProductVersion ?? "";
+            return GetProductVersion() ?? "";
         }
 
         /// <summary>
@@ -21,9 +21,22 @@ namespace Omsipath
         /// </summary>
         public static string GetNameAndVersion()
         {
-            var version = FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).ProductVersion;
+            var version = GetProductVersion();
             if (version == null) return i18n.application_name;
             else return i18n.application_name + ' ' + version;
+        }
+
+        private static string? GetProductVersion()
+        {
+//            var location = Assembly.GetExecutingAssembly().Location;
+//            if (File.Exists(location))
+//                return FileVersionInfo.GetVersionInfo(location).ProductVersion;
+
+            var location = Environment.ProcessPath;
+            if (File.Exists(location))
+                return FileVersionInfo.GetVersionInfo(location).ProductVersion;
+
+            return null;
         }
 
         public static void OpenUrl(string filename)
