@@ -10,7 +10,7 @@
     <RootNamespace>Omsipath</RootNamespace>
     <IsPublishable>True</IsPublishable>
     <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
-    <Version>1.1</Version>
+    <Version>1.2</Version>
     <Authors>l-uuz</Authors>
     <ApplicationIcon>Bus.ico</ApplicationIcon>
     <Copyright>(c) 2022 l-uuz. All rights reserved.</Copyright>
