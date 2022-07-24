@@ -150,11 +150,9 @@
             // 
             // targetTextbox
             // 
-            this.targetTextbox.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Omsipath.Properties.Settings.Default, "targetDirectory", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             resources.ApplyResources(this.targetTextbox, "targetTextbox");
             this.targetTextbox.Name = "targetTextbox";
             this.targetTextbox.ReadOnly = true;
-            this.targetTextbox.Text = global::Omsipath.Properties.Settings.Default.targetDirectory;
             // 
             // bottomLayout
             // 

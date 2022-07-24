@@ -22,12 +22,15 @@ namespace Omsipath
         /// </summary>
         private void OnFormLoad(object sender, EventArgs e)
         {
-            Size = Settings.Default.windowSize;
+            Size = Settings.Default.windowSize; // automatically within boundary
             var version = Assembly.GetExecutingAssembly().GetName().Version;
             Text = i18n.application_name;
             if (version != null) Text += $@" {version.Major}.{version.Minor}";
             if (version != null && version.Revision != 0) Text += $@".{version.Revision}";
             RefreshSubdirectoryCombobox();
+
+            targetTextbox.DataBindings.Add(nameof(targetTextbox.Text), Settings.Default, nameof(Settings.Default.targetDirectory), true, DataSourceUpdateMode.OnPropertyChanged);
+            targetTextbox.Text = Settings.Default.targetDirectory;
         }
 
         // Called when the form is closing => save the form's size
