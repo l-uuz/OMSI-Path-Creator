@@ -33,7 +33,6 @@
             this.fileList = new System.Windows.Forms.CheckedListBox();
             this.targetButton = new System.Windows.Forms.Button();
             this.targetLabel = new System.Windows.Forms.Label();
-            this.linkWebdisk = new System.Windows.Forms.LinkLabel();
             this.copyFiles = new System.Windows.Forms.Button();
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.subCombobox = new System.Windows.Forms.ComboBox();
@@ -45,7 +44,9 @@
             this.deleteAll = new System.Windows.Forms.Button();
             this.topLayout = new System.Windows.Forms.TableLayoutPanel();
             this.targetTextbox = new System.Windows.Forms.TextBox();
+            this.editSession = new System.Windows.Forms.Button();
             this.bottomLayout = new System.Windows.Forms.TableLayoutPanel();
+            this.infoButton = new System.Windows.Forms.Button();
             this.topLayout.SuspendLayout();
             this.bottomLayout.SuspendLayout();
             this.SuspendLayout();
@@ -71,14 +72,6 @@
             // 
             resources.ApplyResources(this.targetLabel, "targetLabel");
             this.targetLabel.Name = "targetLabel";
-            // 
-            // linkWebdisk
-            // 
-            resources.ApplyResources(this.linkWebdisk, "linkWebdisk");
-            this.linkWebdisk.Name = "linkWebdisk";
-            this.linkWebdisk.TabStop = true;
-            this.toolTip.SetToolTip(this.linkWebdisk, resources.GetString("linkWebdisk.ToolTip"));
-            this.linkWebdisk.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.GoToWebdisk);
             // 
             // copyFiles
             // 
@@ -146,6 +139,7 @@
             this.topLayout.Controls.Add(this.subLabel, 0, 1);
             this.topLayout.Controls.Add(this.targetTextbox, 1, 0);
             this.topLayout.Controls.Add(this.targetButton, 2, 0);
+            this.topLayout.Controls.Add(this.editSession, 2, 1);
             this.topLayout.Name = "topLayout";
             // 
             // targetTextbox
@@ -154,15 +148,29 @@
             this.targetTextbox.Name = "targetTextbox";
             this.targetTextbox.ReadOnly = true;
             // 
+            // editSession
+            // 
+            resources.ApplyResources(this.editSession, "editSession");
+            this.editSession.Image = global::Omsipath.Properties.Resources.Settings;
+            this.editSession.Name = "editSession";
+            // 
             // bottomLayout
             // 
             resources.ApplyResources(this.bottomLayout, "bottomLayout");
+            this.bottomLayout.Controls.Add(this.infoButton, 4, 0);
             this.bottomLayout.Controls.Add(this.deleteSelected, 2, 0);
             this.bottomLayout.Controls.Add(this.copyFiles, 0, 0);
             this.bottomLayout.Controls.Add(this.deleteAll, 1, 0);
             this.bottomLayout.Controls.Add(this.progressBar, 3, 0);
-            this.bottomLayout.Controls.Add(this.linkWebdisk, 4, 0);
             this.bottomLayout.Name = "bottomLayout";
+            // 
+            // infoButton
+            // 
+            resources.ApplyResources(this.infoButton, "infoButton");
+            this.infoButton.Image = global::Omsipath.Properties.Resources.Info;
+            this.infoButton.Name = "infoButton";
+            this.infoButton.UseVisualStyleBackColor = true;
+            this.infoButton.Click += new System.EventHandler(this.infoButton_Click);
             // 
             // MainForm
             // 
@@ -193,7 +201,6 @@
         private System.Windows.Forms.CheckedListBox fileList;
         private System.Windows.Forms.Button targetButton;
         private System.Windows.Forms.Label targetLabel;
-        private System.Windows.Forms.LinkLabel linkWebdisk;
         private System.Windows.Forms.Button copyFiles;
         private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.ComboBox subCombobox;
@@ -205,6 +212,8 @@
         private System.Windows.Forms.TableLayoutPanel bottomLayout;
         private System.Windows.Forms.Button deleteSelected;
         private System.Windows.Forms.Button deleteAll;
+        private Button editSession;
+        private Button infoButton;
     }
 }
 

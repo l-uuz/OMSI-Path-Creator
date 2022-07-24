@@ -23,10 +23,7 @@ namespace Omsipath
         private void OnFormLoad(object sender, EventArgs e)
         {
             Size = Settings.Default.windowSize; // automatically within boundary
-            var version = Assembly.GetExecutingAssembly().GetName().Version;
-            Text = i18n.application_name;
-            if (version != null) Text += $@" {version.Major}.{version.Minor}";
-            if (version != null && version.Revision != 0) Text += $@".{version.Revision}";
+            Text = Utils.GetNameAndVersion();
             RefreshSubdirectoryCombobox();
 
             targetTextbox.DataBindings.Add(nameof(targetTextbox.Text), Settings.Default, nameof(Settings.Default.targetDirectory), true, DataSourceUpdateMode.OnPropertyChanged);
@@ -46,14 +43,6 @@ namespace Omsipath
             if (fileCopyWorker.IsBusy) fileCopyWorker.CancelAsync();
             Settings.Default.windowSize = Size;
             Settings.Default.Save();
-        }
-
-        /// <summary>
-        /// Open the WebDisk main page
-        /// </summary>
-        private void GoToWebdisk(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://reboot.omsi-webdisk.de/community/");
         }
 
         /// <summary>
@@ -330,6 +319,11 @@ namespace Omsipath
             copyFiles.Enabled = enable;
             deleteAll.Enabled = enable;
             deleteSelected.Enabled = enable;
+        }
+
+        private void infoButton_Click(object sender, EventArgs e)
+        {
+            new InfoForm().ShowDialog();
         }
     }
 }

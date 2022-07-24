@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
+﻿<root>
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -160,45 +159,6 @@
   <data name="&gt;&gt;targetLabel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="linkWebdisk.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="linkWebdisk.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="linkWebdisk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>621, 20</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="linkWebdisk.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 0, 3, 4</value>
-  </data>
-  <data name="linkWebdisk.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 15</value>
-  </data>
-  <data name="linkWebdisk.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="linkWebdisk.Text" xml:space="preserve">
-    <value>(C) 2020-2022 OMSI WebDisk</value>
-    <comment>@Invariant</comment>
-  </data>
-  <data name="linkWebdisk.ToolTip" xml:space="preserve">
-    <value>https://reboot.omsi-webdisk.de/community/</value>
-    <comment>@Invariant</comment>
-  </data>
-  <data name="&gt;&gt;linkWebdisk.Name" xml:space="preserve">
-    <value>linkWebdisk</value>
-  </data>
-  <data name="&gt;&gt;linkWebdisk.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;linkWebdisk.Parent" xml:space="preserve">
-    <value>bottomLayout</value>
-  </data>
-  <data name="&gt;&gt;linkWebdisk.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="copyFiles.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -211,6 +171,7 @@
   <data name="copyFiles.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="copyFiles.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>8, 4, 4, 4</value>
   </data>
@@ -239,7 +200,7 @@
     <value>bottomLayout</value>
   </data>
   <data name="&gt;&gt;copyFiles.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="progressBar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
@@ -251,7 +212,7 @@
     <value>184, 4</value>
   </data>
   <data name="progressBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>431, 31</value>
+    <value>525, 31</value>
   </data>
   <data name="progressBar.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -266,7 +227,7 @@
     <value>bottomLayout</value>
   </data>
   <data name="&gt;&gt;progressBar.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="subCombobox.Location" type="System.Drawing.Point, System.Drawing">
     <value>98, 34</value>
@@ -302,7 +263,7 @@
     <value>3, 31</value>
   </data>
   <data name="subLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 29</value>
+    <value>89, 31</value>
   </data>
   <data name="subLabel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -371,7 +332,7 @@
     <value>bottomLayout</value>
   </data>
   <data name="&gt;&gt;deleteSelected.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="deleteAll.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -413,7 +374,7 @@
     <value>bottomLayout</value>
   </data>
   <data name="&gt;&gt;deleteAll.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="topLayout.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -445,6 +406,39 @@
   <data name="&gt;&gt;targetTextbox.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="editSession.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="editSession.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="editSession.Location" type="System.Drawing.Point, System.Drawing">
+    <value>521, 34</value>
+  </data>
+  <data name="editSession.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 25</value>
+  </data>
+  <data name="editSession.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="editSession.Text" xml:space="preserve">
+    <value>Sessions</value>
+  </data>
+  <data name="editSession.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;editSession.Name" xml:space="preserve">
+    <value>editSession</value>
+  </data>
+  <data name="&gt;&gt;editSession.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editSession.Parent" xml:space="preserve">
+    <value>topLayout</value>
+  </data>
+  <data name="&gt;&gt;editSession.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="topLayout.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
@@ -455,7 +449,7 @@
     <value>2</value>
   </data>
   <data name="topLayout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>784, 60</value>
+    <value>784, 62</value>
   </data>
   <data name="topLayout.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -473,7 +467,7 @@
     <value>1</value>
   </data>
   <data name="topLayout.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="targetLabel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="subCombobox" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="subLabel" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="targetTextbox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="targetButton" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0,Percent,100" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="targetLabel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="subCombobox" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="subLabel" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="targetTextbox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="targetButton" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="editSession" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0,Percent,100" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="bottomLayout.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -483,6 +477,45 @@
   </data>
   <data name="bottomLayout.ColumnCount" type="System.Int32, mscorlib">
     <value>5</value>
+  </data>
+  <data name="infoButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="infoButton.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="infoButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="infoButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>715, 3</value>
+  </data>
+  <data name="infoButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 4, 4, 4</value>
+  </data>
+  <data name="infoButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 33</value>
+  </data>
+  <data name="infoButton.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="infoButton.Text" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="infoButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;infoButton.Name" xml:space="preserve">
+    <value>infoButton</value>
+  </data>
+  <data name="&gt;&gt;infoButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;infoButton.Parent" xml:space="preserve">
+    <value>bottomLayout</value>
+  </data>
+  <data name="&gt;&gt;infoButton.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="bottomLayout.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
@@ -512,7 +545,7 @@
     <value>0</value>
   </data>
   <data name="bottomLayout.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="deleteSelected" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="copyFiles" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="deleteAll" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="progressBar" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="linkWebdisk" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0,Percent,100,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0,Absolute,39" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="infoButton" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="deleteSelected" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="copyFiles" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="deleteAll" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="progressBar" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0,Percent,100,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

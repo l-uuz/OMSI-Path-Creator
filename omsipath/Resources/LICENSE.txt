@@ -1,0 +1,22 @@
+                  (c) 2020-2022 l-uuz. ALL RIGHTS RESERVED.
+
+--------------------------------------------------------------------------------
+                             The MIT License (MIT)
+    applies to:
+    - .NET, Copyright (c) .NET Foundation and Contributors
+    - YamlDotNet, Copyright (c) 2006 Kirill Simonov
+                                2008-2014 Antoine Aubry and contributors
+
+--------------------------------------------------------------------------------
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+--------------------------------------------------------------------------------

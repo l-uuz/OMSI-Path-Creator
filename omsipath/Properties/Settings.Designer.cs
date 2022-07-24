@@ -58,5 +58,35 @@ namespace Omsipath.Properties {
                 this["overwriteSetting"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://github.com/l-uuz/OMSI-Path-Creator/issues")]
+        public string urlSupport {
+            get {
+                return ((string)(this["urlSupport"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://github.com/l-uuz/OMSI-Path-Creator")]
+        public string urlSourceCode {
+            get {
+                return ((string)(this["urlSourceCode"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://github.com/l-uuz/OMSI-Path-Creator/releases")]
+        public string urlUpdates {
+            get {
+                return ((string)(this["urlUpdates"]));
+            }
+        }
     }
 }

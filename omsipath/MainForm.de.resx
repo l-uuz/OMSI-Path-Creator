@@ -2615,4 +2615,10 @@
   <data name="subLabel.Text" xml:space="preserve">
     <value>Projektname</value>
   </data>
+  <data name="editSession.Text" xml:space="preserve">
+    <value>Sitzungen</value>
+  </data>
+  <data name="infoButton.Text" xml:space="preserve">
+    <value>Info</value>
+  </data>
 </root>
